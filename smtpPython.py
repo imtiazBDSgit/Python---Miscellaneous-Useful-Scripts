@@ -4,7 +4,7 @@ server = smtplib.SMTP('smtp.gmail.com', 587)
 server.starttls()
 server.login("test@gmail.com", "your passsword")
 SUBJECT='Model Training Update :'
-TEXT='Whats up dude? , Your model is still running , its epoch number 23 : still 7 more epochs to go.'
+TEXT='Whats up dude?'
 #Send the mail
 message = 'Subject: {}\n\n{}'.format(SUBJECT, TEXT)
 server.sendmail("test@gmail.com", "test@gmail.com", message)
